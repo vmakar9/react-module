@@ -7,13 +7,13 @@ export default function Movies(){
 
     const dispatch = useDispatch()
 
-    const {movies} =  useSelector(state => state.movies)
+    const {movies} =  useSelector(state => state.movie)
 
     useEffect(()=>{
         dispatch(movieActions.getAll())
     },[])
 
     return(<div>
-        {movies.map(movie=><Movie  movie={movie}/>)}
+        {movies.map(movie=><Movie key={movie.id} movie={movie}/>)}
     </div>)
 }
