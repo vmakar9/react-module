@@ -23,6 +23,7 @@ const movieSlice = createSlice({
     extraReducers:{
         [getAll.fulfilled]:(state,action)=>{
             state.movies = action.payload
+
         }
     }
 })
