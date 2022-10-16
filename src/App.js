@@ -1,4 +1,4 @@
-import Movies from "./Components/Movies/MoviesList/Movies";
+import Movies from "./Components/Movies/MoviesList/Movies/Movies";
 
 function App() {
   return (

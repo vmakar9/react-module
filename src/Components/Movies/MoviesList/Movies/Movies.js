@@ -1,7 +1,7 @@
 import {useDispatch, useSelector} from "react-redux";
 import {useEffect} from "react";
-import {movieActions} from "../../../redux/slices/MovieSlice";
-import Movie from "./Movie";
+import {movieActions} from "../../../../redux/slices/MovieSlice";
+import Movie from "../Movie/Movie";
 
 export default function Movies(){
 
@@ -9,12 +9,15 @@ export default function Movies(){
 
     const {movies} =  useSelector(state => state.movie)
 
+
+
     useEffect(()=>{
         dispatch(movieActions.getAll())
     },[dispatch])
 
     console.log(movies)
+
     return(<div>
-        {movies.map(movie=><Movie key={movie.id} movie={movie}/>)}
+        {movies.results?.map((movie,index)=><Movie key={index} movie={movie}/>)}
     </div>)
 }
