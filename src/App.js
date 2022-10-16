@@ -1,6 +1,5 @@
 import Movies from "./Components/Movies/MoviesList/Movies";
 
-
 function App() {
   return (
     <div>
