@@ -9,13 +9,10 @@ export default function Movies(){
 
     const {movies} =  useSelector(state => state.movie)
 
-
-
     useEffect(()=>{
         dispatch(movieActions.getAll())
     },[dispatch])
 
-    console.log(movies)
 
     return(<div>
         {movies.results?.map((movie,index)=><Movie key={index} movie={movie}/>)}

@@ -10,8 +10,9 @@
 
 .Card{
     width: 300px;
-    height: 400px;
+    height: 650px;
     border: 1px maroon solid;
     margin: 10px 10px 10px 10px;
     text-align: center;
+
 }
