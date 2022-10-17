@@ -39,7 +39,7 @@ const movieSlice = createSlice({
         [getAll.fulfilled]:(state,action)=>{
             state.movies = action.payload
         },
-        
+
     }
 })
 
