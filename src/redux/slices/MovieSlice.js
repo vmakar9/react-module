@@ -3,8 +3,7 @@ import {moviesService} from "../../services/movies.service";
 
 
 const initialState={
-    movies:[],
-
+    movies:[]
 }
 
 const getAll = createAsyncThunk(

@@ -3,12 +3,14 @@ import User from "./Components/Header/User/User";
 
 
 
+
 function App() {
 
   return (
     <div>
         <User/>
         <Movies/>
+
     </div>
   );
 }
