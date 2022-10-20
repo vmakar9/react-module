@@ -1,5 +1,7 @@
-import Movies from "./Components/Movies/MoviesList/Movies/Movies";
-import User from "./Components/Header/User/User";
+
+import {Navigate, Route, Routes} from "react-router-dom";
+import MoviePage from "./Components/MoviePage/MoviePage";
+import {Details} from "@mui/icons-material";
 
 
 
@@ -8,8 +10,13 @@ function App() {
 
   return (
     <div>
-        <User/>
-        <Movies/>
+        <Routes>
+          <Route path={'/'} element = {<MoviePage/>}>
+              <Route index element={<Navigate to={'/movies'}/>}/>
+              <Route path={'/movies'} element={<MoviePage/>}/>
+              <Route path={'/movies/details'} element={<Details/>}/>
+          </Route>
+        </Routes>
 
     </div>
   );
