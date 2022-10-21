@@ -1,4 +1,12 @@
-.User{
+
+.Header{
+   height: 69px;
+    width: 100%;
     display: inline-flex;
-    gap:10px;
+}
+.header_theme{
+    height: 50px;
+    width: 100px;
+    position: absolute;
+    right: 10px;
 }

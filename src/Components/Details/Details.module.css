@@ -1,0 +1,12 @@
+.details{
+    justify-content: center;
+    text-align: center;
+}
+.genres{
+   display: inline-flex;
+    gap: 10px;
+}
+
+.Raiting{
+   bottom: 50px;
+}

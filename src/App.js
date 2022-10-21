@@ -3,6 +3,7 @@ import {Navigate, Route, Routes} from "react-router-dom";
 import MoviePage from "./Components/MoviePage/MoviePage";
 import Details from "./Components/Details/Details";
 import Layout from "./Components/layout/Layout";
+import {useSelector} from "react-redux";
 
 
 
@@ -10,8 +11,11 @@ import Layout from "./Components/layout/Layout";
 
 function App() {
 
+    const {background, color} = useSelector(state => state.theme)
+
   return (
     <div>
+        <div style={{color:color,background:background}}>
         <Routes>
           <Route path={'/'} element = {<Layout/>}>
               <Route index element={<Navigate to={'/movies'}/>}/>
@@ -19,7 +23,7 @@ function App() {
               <Route path={'/movies/details'} element={<Details/>}/>
           </Route>
         </Routes>
-
+        </div>
     </div>
   );
 }
