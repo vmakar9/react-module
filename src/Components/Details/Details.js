@@ -38,6 +38,8 @@ export default function Details(){
         <p>popularity: {popularity}</p>
         <p> vote count: {vote_count}</p>
         <p> vote average: {vote_average}</p>
-        <ReactStars activeColor={'red'} size={35} count={10} value={vote_average} isHalf={true} classNames={css.Raiting}/>
+        <div className={css.Raiting}>
+        <ReactStars activeColor={'red'} size={35} count={10} value={vote_average} isHalf={true}/>
+        </div>
     </div>)
 }
