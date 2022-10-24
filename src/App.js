@@ -1,12 +1,9 @@
-
+import {useSelector} from "react-redux";
 import {Navigate, Route, Routes} from "react-router-dom";
+
 import MoviePage from "./Components/MoviePage/MoviePage";
 import Details from "./Components/Details/Details";
 import Layout from "./Components/layout/Layout";
-import {useSelector} from "react-redux";
-
-
-
 
 function App() {
 
