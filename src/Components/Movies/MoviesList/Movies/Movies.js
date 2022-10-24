@@ -1,8 +1,9 @@
 import {useDispatch, useSelector} from "react-redux";
 import {useEffect} from "react";
+
 import {movieActions} from "../../../../redux/slices/MovieSlice";
 import Movie from "../Movie/Movie";
-import {genreActions} from "../../../../redux/slices/GenreSlice";
+
 
 
 export default function Movies(){

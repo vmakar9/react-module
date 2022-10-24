@@ -8,7 +8,6 @@ import {useSelector} from "react-redux";
 
 
 
-
 function App() {
 
     const {background, color} = useSelector(state => state.theme)

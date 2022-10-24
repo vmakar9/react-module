@@ -1,5 +1,6 @@
-import User from "../Header/User/User";
 import {Outlet} from "react-router-dom";
+
+import User from "../Header/User/User";
 
 export default function Layout(){
     return(<div>

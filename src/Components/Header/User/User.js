@@ -1,9 +1,11 @@
-import css from './User.module.css'
 import {useState} from "react";
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {useDispatch} from "react-redux";
-import {themeActions as themeAction} from "../../../redux/slices/ThemeSlice";
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import { faToggleOff, faToggleOn} from '@fortawesome/free-solid-svg-icons'
+
+import css from './User.module.css'
+import {themeActions as themeAction} from "../../../redux/slices/ThemeSlice";
+
 export default function User() {
 
     const [theme, setTheme] = useState(false)

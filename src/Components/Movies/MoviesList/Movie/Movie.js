@@ -1,9 +1,10 @@
-import css from "./Movie.module.css"
-import ReactStars from "react-rating-stars-component/dist/react-stars";
 import {useDispatch} from "react-redux";
 import {useEffect, useState} from "react";
-import {genreActions} from "../../../../redux/slices/GenreSlice";
 import {useNavigate} from "react-router-dom";
+import ReactStars from "react-rating-stars-component/dist/react-stars";
+
+import css from "./Movie.module.css"
+import {genreActions} from "../../../../redux/slices/GenreSlice"
 
 export default function Movie({movie}){
 
